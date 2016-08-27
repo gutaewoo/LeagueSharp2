@@ -23,7 +23,7 @@ namespace Leblanc.Modes
         private static int ToggleActive => MenuToggle.Item("Toggle.Active").GetValue<StringList>().SelectedIndex;
 
         
-        private static Obj_AI_Hero Target => TargetSelector.GetTarget(W.Range * 2, TargetSelector.DamageType.Magical);
+        private static Obj_AI_Hero Target => TargetSelector.GetTarget(W.Range - 20, TargetSelector.DamageType.Magical);
       
         public static void Init()
         {
