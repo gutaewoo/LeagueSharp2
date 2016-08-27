@@ -65,7 +65,7 @@ namespace Leblanc.Modes
 
         private static void ExecuteHarass()
         {
-            if (MenuLocal.Item("Harass.UseQ").GetValue<bool>() && Q.CanCast(Target))
+            if (MenuLocal.Item("Harass.UseQ").GetValue<bool>() && Q.CanCast(Target) && W.CanCast(Target))
             {
                 PlayerSpells.CastQ(Target);
             }
